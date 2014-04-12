@@ -1,5 +1,4 @@
 
-
 #
 # GENERATION DU GRAPHE 
 #
@@ -344,7 +343,7 @@ library(mixer)
 library(RCurl)
 library(rjson)
 
-token <-  "CAACEdEose0cBAHgZB4VJu9jSSz6XngnbtBZB0LtVu4s8etFtjbH0aHnyMndtFnT0GzuqTlfDDU1ZAaxd0HKpOyA6z50ymjLLb5hFMajYvQOzpdOrqMbR8bXrqf01t7n2pNtQzJcTXAq7szC8AZBCwAAmoWogtHPoSDakVeXSKmZCPQkOjPZBO7ToHWCUSdpi7VAObbfySCZAwZDZD" # paste you 
+token <-  "yourtoken" # paste you 
 data <-  getURL(sprintf( "https://graph.facebook.com/%s&access_token=%s", "764127769?fields=friends.fields(name,mutualfriends)", token ),ssl.verifypeer = FALSE)
 
 friends  <- fromJSON(data);
